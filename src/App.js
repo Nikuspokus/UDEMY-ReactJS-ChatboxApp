@@ -1,16 +1,25 @@
-import React, { Component, Fragment } from 'react'
-import './App.css'
+import React, { Component, } from "react";
+import "./App.css";
+import Message from "./components/Message";
+
+import Formulaire from "./components/Formulaire";
 
 class App extends Component {
-  render () {
+  render() {
     return (
-      <Fragment>
-        <h2>Chatbox App</h2>
-      <div className='box'>
-      </div>
-      </Fragment>
-    )
+        <div className="box">
+          <div>
+            <div className="messages">
+              <Message />
+              <Message />
+              <Message />
+            </div>
+          </div>
+          <Formulaire/>
+        </div>
+
+    );
   }
 }
 
-export default App
+export default App;

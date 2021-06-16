@@ -20,14 +20,14 @@ class Connexion extends Component {
 
   render() {
     if(this.state.goToChat) {
-      return <Redirect to={`/pseudo/${this.state.pseudo}`}></Redirect>
+      return <Redirect push to={`/pseudo/${this.state.pseudo}`}></Redirect>
     }
 
 
     return (
       <div className='connexionBox'>
         <form className="connexion" onSubmit={this.handleSubmit}>
-        <div className="wrapper">
+        {/* <div className="wrapper">
           <p>Coding is</p>
           <div className="words">
             <span>fantastic</span>
@@ -36,7 +36,7 @@ class Connexion extends Component {
             <span>incredible</span>
             <span>fantastic</span>
           </div>
-        </div>
+        </div> */}
           <input 
             value={this.state.pseudo}
             onChange={this.handleChange}
