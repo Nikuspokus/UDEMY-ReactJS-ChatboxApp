@@ -195,3 +195,59 @@ button:disabled {
 	background: #eceff1;
 }
 
+/* ----------------------------
+	text spin words
+---------------------------- */
+
+@keyframes spin_words {
+	10%{
+		transform: translateY(-112%)
+	}
+	25%{
+		transform: translateY(-100%)
+	}
+	35%{
+		transform: translateY(-212%)
+	}
+	50%{
+		transform: translateY(-200%)
+	}
+	60%{
+		transform: translateY(-312%)
+	}
+	75%{
+		transform: translateY(-300%)
+	}
+	85%{
+		transform: translateY(-412%)
+	}
+	100%{
+		transform: translateY(-400%)
+	}
+}
+
+*,
+*:before,
+*:after {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+	font-family: "Poppins", sans-serif;
+	font-size: 45px;
+	font-weight: 500;
+}
+.wrapper{
+	box-sizing: content-box;
+	height: 70px;
+	display: flex;
+}
+.words{
+	overflow: hidden;
+}
+span{
+	display: block;
+	height: 100%;
+	padding-left: 10px;
+	color: #BE9FDD;
+	animation: spin_words 6s infinite;
+}
