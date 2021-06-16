@@ -248,6 +248,7 @@ span{
 	display: block;
 	height: 100%;
 	padding-left: 10px;
-	color: #BE9FDD;
-	animation: spin_words 6s infinite;
+	/* color: #BE9FDD; */
+	color: #2196F3;
+	animation: spin_words 8s infinite;
 }
